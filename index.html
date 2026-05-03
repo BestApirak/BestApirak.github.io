@@ -15,6 +15,7 @@
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
+          <li><a href="#attach">Attach Image</a></li>
       </ul>
     </nav>
 
@@ -74,27 +75,27 @@
       </ul>
     </section>
     
-    <section id="skills" class="card">
-      <h2>Skills & Languages</h2>
-      <div class="skills-grid">
-        <div>
-          <h3>Abilities</h3>
-          <ul class="skills-list">
-            <li>Playing Badminton </li>
-            <li>Singing</li>
-            <li>Programming</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Languages</h3>
-          <ul class="skills-list">
-            <li>Thai (Native)</li>
-            <li>English (Basic)</li>
-          </ul>
-        </div>
-      </div>
+    <section id="contact" class="card">
+      <h2>Contact Info</h2>
+      <ul class="contact-list">
+        <li><strong>Phone:</strong> <span>+66 0X-XXX-XXXX</span></li>
+        <li><strong>Address:</strong> <span>Bangkok, Thailand</span></li>
+        <li><strong>Social:</strong>
+          <a href="#" aria-label="Facebook">Facebook</a> •
+          <a href="#" aria-label="Twitter">Twitter</a>
+        </li>
+      </ul>
     </section>
 
+    <section id="attach" class="card">
+      <h2>Attach Image</h2>
+      <p class="muted">Upload an image to use as your profile photo. It will be saved locally in your browser.</p>
+      <input id="profileUpload" type="file" accept="image/*">
+      <button id="removeImage" class="muted" style="display:none;margin-top:8px">Remove saved image</button>
+      <div class="preview" style="margin-top:12px">
+        <img id="profilePreview" alt="No image uploaded" style="display:none;max-width:140px;border-radius:8px;cursor:pointer">
+      </div>
+    </section>
     <section id="experience" class="card">
       <h2>Experience & Activities</h2>
       <ul class="exp-list">
