@@ -21,7 +21,7 @@
     <section id="hero" class="hero">
       <div class="hero-grid">
         <div class="avatar">
-          <img src="https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/542012104_1434190724526173_1571852143596071358_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeH7szt87cdDPH5x0KZbhQjQ0v8CkxfEgA_S_wKTF8SAD9sbUu5Biq26Uwzm0OjI403mkBYU_ly0UC6f-dbpbfLG&_nc_ohc=YL0fRya3K4QQ7kNvwEZlvSN&_nc_oc=AdqcJq6i7dBUdcJLBXmOqzQKn5RfdGJyuok40_k7vpYHykPsRfiAE9RtAiMINALjOw8&_nc_zt=23&_nc_ht=scontent.fbkk5-6.fna&_nc_gid=77QBQVkh5HjZwxeeBXoLFA&_nc_ss=7b2a8&oh=00_Af50yYPvWW9ibK5AuuNyV8tfUygr4v12-qDT7iUt7xa1tQ&oe=69FCD0F1" alt="Profile photo">
+          <img id="heroAvatar" data-default="https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/542012104_1434190724526173_1571852143596071358_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeH7szt87cdDPH5x0KZbhQjQ0v8CkxfEgA_S_wKTF8SAD9sbUu5Biq26Uwzm0OjI403mkBYU_ly0UC6f-dbpbfLG&_nc_ohc=YL0fRya3K4QQ7kNvwEZlvSN&_nc_oc=AdqcJq6i7dBUdcJLBXmOqzQKn5RfdGJyuok40_k7vpYHykPsRfiAE9RtAiMINALjOw8&_nc_zt=23&_nc_ht=scontent.fbkk5-6.fna&_nc_gid=77QBQVkh5HjZwxeeBXoLFA&_nc_ss=7b2a8&oh=00_Af50yYPvWW9ibK5AuuNyV8tfUygr4v12-qDT7iUt7xa1tQ&oe=69FCD0F1" src="https://scontent.fbkk5-6.fna.fbcdn.net/v/t39.30808-6/542012104_1434190724526173_1571852143596071358_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeH7szt87cdDPH5x0KZbhQjQ0v8CkxfEgA_S_wKTF8SAD9sbUu5Biq26Uwzm0OjI403mkBYU_ly0UC6f-dbpbfLG&_nc_ohc=YL0fRya3K4QQ7kNvwEZlvSN&_nc_oc=AdqcJq6i7dBUdcJLBXmOqzQKn5RfdGJyuok40_k7vpYHykPsRfiAE9RtAiMINALjOw8&_nc_zt=23&_nc_ht=scontent.fbkk5-6.fna&_nc_gid=77QBQVkh5HjZwxeeBXoLFA&_nc_ss=7b2a8&oh=00_Af50yYPvWW9ibK5AuuNyV8tfUygr4v12-qDT7iUt7xa1tQ&oe=69FCD0F1" alt="Profile photo">
         </div>
         <div class="hero-info">
           <h1 class="full-name">Apirak Sawatwongwicha</h1>
@@ -43,6 +43,15 @@
           <a href="https://www.facebook.com/apirak.sawatwongwicha.54?locale=th_TH" aria-label="Facebook">Facebook</a> • Bestkung Apirak
         </li>
       </ul>
+        <div class="upload-card">
+          <h3>Attach Image / Certificate</h3>
+          <p class="muted">Upload an image to use as your profile photo. It will be saved locally in your browser.</p>
+          <input id="profileUpload" type="file" accept="image/*">
+          <button id="removeImage" class="muted" style="display:none;margin-top:8px">Remove saved image</button>
+          <div class="preview" style="margin-top:12px">
+            <img id="profilePreview" alt="No image uploaded" style="display:none;max-width:140px;border-radius:8px;cursor:pointer">
+          </div>
+        </div>
     </section>
 
     <section id="education" class="card">
@@ -64,7 +73,7 @@
         </li>
       </ul>
     </section>
-
+    
     <section id="skills" class="card">
       <h2>Skills & Languages</h2>
       <div class="skills-grid">
