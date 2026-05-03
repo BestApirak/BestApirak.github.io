@@ -1,9 +1,8 @@
 // Smooth scrolling for in-page navigation and set current year
 document.addEventListener('DOMContentLoaded', function(){
-  // set year
-  const y = new Date().getFullYear();
-  const yearEl = document.getElementById('year');
-  if(yearEl) yearEl.textContent = y;
+  // set year in footer(s)
+  const year = new Date().getFullYear();
+  document.querySelectorAll('.year').forEach(function(el){ el.textContent = year; });
 
   // smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
